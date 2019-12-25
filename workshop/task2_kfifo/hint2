@@ -1,0 +1,1 @@
+strace -f cat /dev/keylogger0

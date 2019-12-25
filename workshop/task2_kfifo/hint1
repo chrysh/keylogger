@@ -1,0 +1,7 @@
+man read:
+
+RETURN VALUE
+	On success, the number of bytes read is returned (zero indicates end of file),..
+	It is not an error if this number is smaller than the number of
+	bytes requested; this may happen for example because fewer bytes are actually
+	available right now...

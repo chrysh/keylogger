@@ -1,0 +1,5 @@
+Define a kfifo. Use it to store user input from the chardev on call of the write() function, and give it back to userspace on call of the read() function.
+
+$ echo AAA > /dev/keylogger0
+$ cat /dev/keylogger0
+AAA

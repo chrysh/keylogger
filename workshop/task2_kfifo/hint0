@@ -1,0 +1,9 @@
+
+DEFINE_KFIFO(fifo, char, 1024);
+
+kfifo functions:
+---------------
+
+kfifo_put, kfifo_get
+kfifo_in, kfifo_out
+kfifo_to_user, kfifo_from_user
