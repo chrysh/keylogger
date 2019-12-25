@@ -1,0 +1,13 @@
+To compile the kernel, go into the kernel source directory and call the following command as user
+(never call make as root):
+
+$ make -j8 O=build
+
+This will start 8 threads and put the object files and kernel objects into build/.
+To clean up your workspace, just delete that directory.
+
+To compile an out of tree Linux Kernel module, call the following command:
+
+$ make -C $KERNDIR/build  M=$MODULE_DIR
+
+

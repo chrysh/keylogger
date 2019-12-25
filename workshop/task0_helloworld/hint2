@@ -1,0 +1,7 @@
+You can load a module with the command
+
+$ insmod <MODULE>
+
+and you can unload a module with the command
+
+$ rmmod <MODULE>

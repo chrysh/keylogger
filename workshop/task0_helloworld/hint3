@@ -1,0 +1,15 @@
+The module init function is called when the module is loaded and the exit function is called
+when the module is unloaded.
+
+static int __init hook_init(void)
+{
+..
+}
+
+static void __exit hook_exit(void)
+{
+..
+}
+
+module_init(hook_init);
+module_exit(hook_exit);
