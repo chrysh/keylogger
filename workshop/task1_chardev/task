@@ -1,0 +1,2 @@
+Implement a character device for communication with user space.
+Always check function return values!

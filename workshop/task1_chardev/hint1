@@ -1,0 +1,21 @@
+Use the following struct to implement the functions:
+
+```
+const struct file_operations my_fops = {
+    .owner = THIS_MODULE,
+    .open = my_open,
+    .read = my_read,
+    .write = my_write,
+    .release = my_release,
+    .unlocked_ioctl = my_ioctl
+};
+```
+
+Register the struct with your character device.
+(See https://linux-kernel-labs.github.io/master/labs/device_drivers.html)
+
+You can trace the functions called on you device with strace.
+Test the called functions with:
+
+$ echo aaa > /dev/keylogger
+$ cat /dev/keylogger
