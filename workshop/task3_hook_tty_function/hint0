@@ -1,0 +1,3 @@
+The `struct tty_struct` is stored in `file->private_data`.
+You can open a file in kernelspace with the function `filp_open`.
+Use get_file to increase the refence pointer and set_file to decrease the reference counter to `struct file`.

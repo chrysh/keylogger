@@ -1,0 +1,3 @@
+The function receive_buf2 is called when a character arrives on the serial interface.
+Overwrite the function with your own function, but don't forget to safe the old function
+pointer so that you can restore it later!

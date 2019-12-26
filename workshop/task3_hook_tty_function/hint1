@@ -1,0 +1,5 @@
+The function receive_buf2 can be reached through the elements of struct tty_struct;
+
+tty->ldisc->ops->receive_buf2
+
+Don't forget to restore the original function on function unload!
