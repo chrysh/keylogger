@@ -1,0 +1,2 @@
+The function receive_buf can receive up to 5 characters per key press, which need to be interpreted together.
+Using the file special_key.c, implement a log_buf() function in your as part of your character device, which will write the interpreted string into the kfifo. This kfifo can later be read out by the read() function of the character device.
