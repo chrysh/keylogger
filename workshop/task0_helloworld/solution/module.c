@@ -3,14 +3,14 @@
 
 static int __init hook_init(void)
 {
-	printk("Hello World!");
+	printk("Hello World!\n");
 
 	return 0;
 }
 
 static void __exit hook_exit(void)
 {
-	printk("Bye World..");
+	printk("Bye World..\n");
 }
 
 module_init(hook_init);
